@@ -23,7 +23,7 @@
 
         "symfony/yaml": "~5.0",
 
-        "cloudloyalty/petrovich-rules": "dev-master"
+        "cloudloyalty/petrovich-rules": "dev-master@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.5.3",
