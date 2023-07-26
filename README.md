@@ -2,8 +2,6 @@
 
 ![Petrovich](https://raw.github.com/rocsci/petrovich/master/petrovich.png)
 
-[![Build Status](https://secure.travis-ci.org/staticall/petrovich-php.svg?branch=master)](https://secure.travis-ci.org/staticall/petrovich-php) [![Coverage Status](https://coveralls.io/repos/github/staticall/petrovich-php/badge.svg?branch=master&service=github)](https://coveralls.io/github/staticall/petrovich-php?branch=master) [![Latest Stable Version](https://poser.pugx.org/staticall/petrovich-php/v/stable)](https://packagist.org/packages/staticall/petrovich-php) [![Code Quality](https://scrutinizer-ci.com/g/staticall/petrovich-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/staticall/petrovich-php/?branch=master) [![Infection MSI](https://badge.stryker-mutator.io/github.com/staticall/petrovich-php/master)](https://infection.github.io)
-
 Склонение падежей русских имён, фамилий и отчеств. Портированная версия с [Ruby](https://github.com/petrovich/petrovich-ruby) на PHP, использует [официальные правила](https://github.com/petrovich/petrovich-rules)
 
 ## Установка и использование
@@ -16,6 +14,16 @@
 composer require staticall/petrovich-php
 ``
 
+## Правила
+
+Для установки правил можно использовать
+
+``
+composer require cloudloyalty/petrovich-rules
+``
+
+Правила обновляются редко, поэтому хорошей идеей будет сохранить их в ресурсах вашего проекта
+
 ### Пример использования
 
 Пример склонения отдельно имени, фамилии и отчества:
@@ -25,7 +33,7 @@ mb_internal_encoding('UTF-8');
 
 require_once 'path-to-vendor/autoload.php';
 
-$petrovich = new Staticall\Petrovich(Staticall\Petrovich\Loader::load('path-to-vendor/cloudloyalty/petrovich-rules/rules.json'));
+$petrovich = new Staticall\Petrovich(Staticall\Petrovich\Loader::load('path-to-petrovich-rules/rules.json'));
 
 // Родительный падеж
 $lastNameGenitive   = $petrovich->inflectLastName('Пушкин', Staticall\Petrovich\Ruleset::CASE_GENITIVE, Staticall\Petrovich\Ruleset::GENDER_MALE); // Пушкина
@@ -40,7 +48,7 @@ mb_internal_encoding('UTF-8');
 
 require_once 'path-to-vendor/autoload.php';
 
-$petrovich = new Staticall\Petrovich(Staticall\Petrovich\Loader::load('path-to-vendor/cloudloyalty/petrovich-rules/rules.json'));
+$petrovich = new Staticall\Petrovich(Staticall\Petrovich\Loader::load('path-to-petrovich-rules/rules.json'));
 
 // Родительный падеж
 // Важно! На данный момент, такой порядок обязателен
