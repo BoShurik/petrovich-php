@@ -1,5 +1,5 @@
 <?php
-namespace Staticall\Petrovich\Petrovich;
+namespace BoShurik\Petrovich\Petrovich;
 
 use Symfony\Component\Yaml\Yaml;
 

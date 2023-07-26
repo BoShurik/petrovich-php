@@ -1,7 +1,7 @@
 {
-    "name":        "staticall/petrovich-php",
-    "description": "Fork of original petrovich/petrovich-php repository, with testing, PHP7 support and minor improvements",
-    "license":     "MIT",
+    "name": "boshurik/petrovich-php",
+    "description": "Fork of original petrovich/petrovich-php repository, with testing, modern PHP support and minor improvements",
+    "license": "MIT",
 
     "keywords": [
         "petrovich",
@@ -11,8 +11,8 @@
     ],
 
     "support": {
-        "issues": "https://github.com/staticall/petrovich-php/issues",
-        "source": "https://github.com/staticall/petrovich-php"
+        "issues": "https://github.com/BoShurik/petrovich-php/issues",
+        "source": "https://github.com/BoShurik/petrovich-php"
     },
 
     "require": {
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Staticall\\Petrovich\\": "src/"
+            "BoShurik\\Petrovich\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "StaticallTest\\": "test/"
+            "BoShurik\\Petrovich\\Test\\": "test/"
         }
     },
 

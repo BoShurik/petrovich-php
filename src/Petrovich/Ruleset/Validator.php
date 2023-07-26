@@ -1,7 +1,7 @@
 <?php
-namespace Staticall\Petrovich\Petrovich\Ruleset;
+namespace BoShurik\Petrovich\Petrovich\Ruleset;
 
-use Staticall\Petrovich\Petrovich;
+use BoShurik\Petrovich\Petrovich;
 
 class Validator
 {

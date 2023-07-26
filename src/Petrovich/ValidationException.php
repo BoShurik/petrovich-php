@@ -1,7 +1,7 @@
 <?php
-namespace Staticall\Petrovich\Petrovich;
+namespace BoShurik\Petrovich\Petrovich;
 
-use Staticall\Petrovich\Exception;
+use BoShurik\Petrovich\Exception;
 
 class ValidationException extends Exception
 {

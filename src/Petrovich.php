@@ -1,7 +1,7 @@
 <?php
-namespace Staticall\Petrovich;
+namespace BoShurik\Petrovich;
 
-use Staticall\Petrovich\Petrovich\Ruleset;
+use BoShurik\Petrovich\Petrovich\Ruleset;
 
 class Petrovich
 {

@@ -11,7 +11,7 @@
 Для установке, добавьте данный пакет в зависимости *Composer*, либо вручную, либо используя следующую команду:
 
 ``
-composer require staticall/petrovich-php
+composer require boshurik/petrovich-php
 ``
 
 ## Правила
@@ -67,13 +67,13 @@ echo Staticall\Petrovich::detectGender('Петровна'); // Petrovich::GENDER
 
 ## Версионирование
 
-При версионировании, следуем заветам [SemVer](http://semver.org/). Для просмотра доступных версий, взгляните на [теги этого репозитория](https://github.com/staticall/petrovich-php/tags).
+При версионировании, следуем заветам [SemVer](http://semver.org/). Для просмотра доступных версий, взгляните на [теги этого репозитория](https://github.com/boshurik/petrovich-php/tags).
 
 ## Авторы
 
 Все [контрибьюторы оригинального проекта](https://github.com/petrovich/petrovich-php/contributors).
 
-А также все [контрибьюторы этого форка](https://github.com/staticall/petrovich-php/contributors).
+А также все [контрибьюторы этого](https://github.com/BoShurik/petrovich-php/contributors) и [оригинального форка](https://github.com/staticall/petrovich-php/contributors).
 
 ## Лицензия
 
@@ -83,9 +83,7 @@ echo Staticall\Petrovich::detectGender('Петровна'); // Petrovich::GENDER
 
 - [petrovich/petrovich-rules](https://github.com/petrovich/petrovich-rules)
 - [cloudloyalty/petrovich-rules](https://github.com/cloudloyalty/petrovich-rules)
+- [staticall/petrovich-php](https://github.com/staticall/petrovich-php)
 - [symfony/yaml](https://github.com/symfony/yaml)
-- [infection/infection](https://github.com/infection/infection)
 - [sebastianbergmann/phpunit](https://github.com/sebastianbergmann/phpunit)
 - [squizlabs/php_codesniffer](https://github.com/squizlabs/php_codesniffer)
-- [Coveralls](https://coveralls.io/)
-- [Travis CI](https://travis-ci.org/)
