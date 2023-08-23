@@ -57,7 +57,7 @@ class Petrovich
         if ($gender === null) {
             $gender = Ruleset::GENDER_ANDROGYNOUS;
 
-            if ($parsed['middleName'] !== null) {
+            if (!empty($parsed['middleName'])) {
                 $gender = static::detectGender($parsed['middleName']);
             }
         }
