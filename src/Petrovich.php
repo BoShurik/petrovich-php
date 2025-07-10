@@ -50,7 +50,7 @@ class Petrovich
      *
      * @throws Exception
      */
-    public function inflectFullName(string $fullName, int $case, string $gender = null) : string
+    public function inflectFullName(string $fullName, int $case, ?string $gender = null) : string
     {
         $parsed = static::parseFullName($fullName);
 
@@ -111,7 +111,7 @@ class Petrovich
      *
      * @throws Exception
      */
-    public function inflectMiddleName(string $middleName, int $case, string $gender = null) : string
+    public function inflectMiddleName(string $middleName, int $case, ?string $gender = null) : string
     {
         return $this->ruleset->inflectMiddleName($middleName, $case, $gender ?? static::detectGender($middleName));
     }
